@@ -18,7 +18,7 @@ class _SetProfilePageState extends State<SetProfilePage> {
         width: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/image.png"),
+            image: AssetImage("lib/views/SetProfileImage/assets/image.png"),
           ),
         ),
         child: Column(
@@ -29,7 +29,7 @@ class _SetProfilePageState extends State<SetProfilePage> {
             CircleAvatar(
               radius: 50.w,
               backgroundImage: const NetworkImage(
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAQCnMtoCtt7DwMS3DNgy30uDnV_l2JN1j5Q&s"),
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgVcooo6WLZCwcJc90g0eqm_5ygSz4NxFzQ&s"),
             ),
             SizedBox(
               height: 40.h,
