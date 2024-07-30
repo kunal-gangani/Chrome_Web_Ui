@@ -26,7 +26,9 @@ class _SignInPageState extends State<SignInPage> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Icon(Icons.arrow_back),
+          icon: const Icon(
+            Icons.arrow_back,
+          ),
         ),
       ),
       body: Column(
@@ -51,9 +53,9 @@ class _SignInPageState extends State<SignInPage> {
                   children: [
                     Image.network(
                       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgVcooo6WLZCwcJc90g0eqm_5ygSz4NxFzQ&s",
-                      height: 100.h, 
-                      width: 100.w, 
-                      fit: BoxFit.cover, 
+                      height: 100.h,
+                      width: 100.w,
+                      fit: BoxFit.cover,
                     ),
                     Row(
                       children: [
