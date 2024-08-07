@@ -13,10 +13,8 @@ This project is a simple implementation of a Google-like search engine that allo
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- (Add any other technologies or frameworks you used)
+- Flutter
+- Dart
 
 ## Installation
 
