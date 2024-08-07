@@ -4,13 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:web_ui/globals/routes.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-      systemNavigationBarColor: Colors.grey,
-      systemNavigationBarDividerColor: Colors.black,
-    ),
-  );
   runApp(const MyApp());
 }
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:web_ui/globals/routes.dart';
 import 'package:web_ui/globals/variables.dart';
+import 'package:web_ui/views/SignInPage/sign_in_page.dart';
 
 class SetPassword extends StatefulWidget {
   const SetPassword({super.key});
@@ -52,9 +53,9 @@ class _SetPasswordState extends State<SetPassword> {
                   children: [
                     Image.network(
                       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkgVcooo6WLZCwcJc90g0eqm_5ygSz4NxFzQ&s",
-                      height: 100.h, 
-                      width: 100.w, 
-                      fit: BoxFit.cover, 
+                      height: 100.h,
+                      width: 100.w,
+                      fit: BoxFit.cover,
                     ),
                     Text(
                       "Welcome",
@@ -74,19 +75,19 @@ class _SetPasswordState extends State<SetPassword> {
                           color: Colors.black,
                         ),
                       ),
-                      child: const Row(
+                      child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.account_circle,
                           ),
                           Text(
-                            "thekunalgangani@gmail.com",
-                            style: TextStyle(
+                            email,
+                            style: const TextStyle(
                               fontWeight: FontWeight.w600,
                             ),
                           ),
-                          Icon(
+                          const Icon(
                             Icons.keyboard_arrow_down_outlined,
                           ),
                         ],
@@ -132,7 +133,7 @@ class _SetPasswordState extends State<SetPassword> {
                             });
                           },
                         ),
-                        const Text('Show Password'),
+                        const Text('Hide Password'),
                       ],
                     ),
                     SizedBox(

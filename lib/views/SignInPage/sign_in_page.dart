@@ -11,6 +11,8 @@ class SignInPage extends StatefulWidget {
   _SignInPageState createState() => _SignInPageState();
 }
 
+String email = "";
+
 class _SignInPageState extends State<SignInPage> {
   List<String> items = ['English', 'Spanish', 'Hindi', 'German', 'French'];
   String? selectedItem;
@@ -153,11 +155,13 @@ class _SignInPageState extends State<SignInPage> {
                         ),
                         ElevatedButton(
                           onPressed: () {
-                            emailAddress = emailCtrl.text.toString();
-                            Navigator.pushNamed(
-                              context,
-                              Routes.setPassword,
-                            );
+                            email = emailCtrl.text.toString();
+                            if (email.toString().isNotEmpty) {
+                              Navigator.pushNamed(
+                                context,
+                                Routes.setPassword,
+                              );
+                            }
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.blue,
